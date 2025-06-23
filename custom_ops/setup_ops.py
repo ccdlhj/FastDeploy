@@ -207,7 +207,7 @@ elif paddle.is_compiled_with_cuda():
     if not os.path.exists(cutlass_dir) or not os.listdir(cutlass_dir):
         if not os.path.exists(cutlass_dir):
             os.makedirs(cutlass_dir)
-        clone_git_repo("v3.8.0", "https://github.com/NVIDIA/cutlass.git",
+        clone_git_repo("v3.8.0", "https://ghfast.top/https://github.com/NVIDIA/cutlass.git",
                        cutlass_dir)
         if not os.listdir(cutlass_dir):
             raise ValueError("Git clone cutlass failed!")
@@ -245,7 +245,7 @@ elif paddle.is_compiled_with_cuda():
     if not os.path.exists(json_dir) or not os.listdir(json_dir):
         if not os.path.exists(json_dir):
             os.makedirs(json_dir)
-        clone_git_repo("v3.11.3", "https://github.com/nlohmann/json.git",
+        clone_git_repo("v3.11.3", "https://ghfast.top/https://github.com/nlohmann/json.git",
                        json_dir)
         if not os.listdir(json_dir):
             raise ValueError("Git clone nlohmann_json failed!")
